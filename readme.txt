@@ -1,7 +1,7 @@
 === Responsive oEmbed ===
 Contributors: palasthotel, greatestview
 Donate link: https://palasthotel.de/
-Tags: oembed, responsive, youtube, vimeo, instagram, twitter, soundcloud
+Tags: oembed, responsive, iframe, youtube, vimeo, instagram, twitter, soundcloud
 Requires at least: 4.0
 Tested up to: 4.7.3
 Stable tag: trunk
