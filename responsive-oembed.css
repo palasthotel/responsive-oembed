@@ -1,0 +1,24 @@
+/**
+ * Author:      Palasthotel <rezeption@palasthotel.de> (Kim-Christian Meyer)
+ * Author URI:  https://palasthotel.de
+ * License:     GNU General Public License v3
+ * License URI: http://www.gnu.org/licenses/gpl-3.0.html
+ * @copyright   Copyright (c) 2017, Palasthotel GfdPmbH Berlin
+ */
+
+.responsive-oembed-wrapper.has-aspect-ratio {
+	position: relative;
+	width: 100%;
+	height: 0;
+	overflow: hidden;
+}
+
+.responsive-oembed-wrapper > iframe,
+.responsive-oembed-wrapper > object,
+.responsive-oembed-wrapper > embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
