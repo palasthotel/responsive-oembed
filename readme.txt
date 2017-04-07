@@ -15,7 +15,7 @@ This plugin uses some minimal CSS rules and a wrapping HTML element to maintain 
 
 Unlike other plugins, this plugin does not use any JavaScript!
 
-The aspect ratio is calculated from the (iframe, object or embed) HTML tag width and height attributes. An aspect ratio will only be applied, if both width AND height attributes are given by the oEmbed element. Some oEmbeds have no width or height attributes set, because they calculate their dimension via Javascript. In those cases a default fallback aspect ratio might result in wrong appearances.
+The aspect ratio is calculated from the (iframe, object or embed) HTML tag width and height attributes. An aspect ratio will only be applied, if both width AND height attributes are given by the oEmbed element. Some oEmbeds have no width or height attributes set, because they calculate their dimension via JavaScript. In those cases a default fallback aspect ratio might result in wrong appearances.
 
 You can find a [list of all oEmbed sites supported by WordPress here](https://codex.wordpress.org/Embeds#Okay.2C_So_What_Sites_Can_I_Embed_From.3F).
 
