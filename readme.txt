@@ -1,5 +1,5 @@
 === Responsive oEmbed ===
-Contributors: greatestview, palasthotel
+Contributors: palasthotel, greatestview
 Donate link: https://palasthotel.de/
 Tags: oembed, responsive, aspect ratio, iframe, youtube, vimeo, instagram, twitter, soundcloud
 Requires at least: 4.0
