@@ -13,9 +13,9 @@
 	overflow: hidden;
 }
 
-.responsive-oembed-wrapper > iframe,
-.responsive-oembed-wrapper > object,
-.responsive-oembed-wrapper > embed {
+.responsive-oembed-wrapper.has-aspect-ratio > iframe,
+.responsive-oembed-wrapper.has-aspect-ratio > object,
+.responsive-oembed-wrapper.has-aspect-ratio > embed {
 	position: absolute;
 	top: 0;
 	left: 0;
