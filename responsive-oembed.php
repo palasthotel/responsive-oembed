@@ -2,13 +2,13 @@
 
 /**
  * Plugin Name: Responsive oEmbed
- * Description: Adds a wrapper element around oEmbed elements and applies some CSS to maintain the aspect ratio, which is calculated from the iframe, object or embed html tag width and height attributes. An aspect ratio will only be applied, if both width AND height attributes are given. Some oEmbeds have no width or height attributes set, because they calculate their dimension via Javascript. In those cases this plugin has no effect. Uses both 'embed_oembed_html' and 'oembed_result' filter hooks to manipulate automated and manual oEmbed calls.
- * Version:     1.3
+ * Description: Adds a wrapper element around oEmbed elements and applies some CSS to maintain the aspect ratio, which is calculated from the iframe, object or embed html tag width and height attributes. An aspect ratio will only be applied, if both width AND height attributes are given and if there is no data-secret attribut (because those are handled via wp-embed.js). Some oEmbeds have no width or height attributes set, because they calculate their dimension via Javascript. In those cases this plugin has no effect. Uses both 'embed_oembed_html' and 'oembed_result' filter hooks to manipulate automated and manual oEmbed calls.
+ * Version:     1.4
  * Author:      Palasthotel <rezeption@palasthotel.de> (Kim-Christian Meyer)
  * Author URI:  https://palasthotel.de
  * License:     GNU General Public License v3
  * License URI: http://www.gnu.org/licenses/gpl-3.0.html
- * @copyright   Copyright (c) 2017, Palasthotel GfdPmbH Berlin
+ * @copyright   Copyright (c) 2018, Palasthotel GfdPmbH Berlin
  */
 
 
@@ -52,6 +52,11 @@ function responsive_oembed_get_embed_ratio( $html ) {
 	$matches1 = false;
 	$success1 = preg_match( "~ < (?:iframe|object|embed) \s+ ([^>]+) > ~xusi", $html, $matches1 );
 	if ( empty( $success1 ) || empty( $matches1 ) || count( $matches1 ) < 2 ) {
+		return false;
+	}
+
+	// iFrames with data-secret attribute are already responsive via wp-embed.js
+	if ( strpos( $matches1[ 0 ], ' data-secret=' ) !== false ) {
 		return false;
 	}
 
