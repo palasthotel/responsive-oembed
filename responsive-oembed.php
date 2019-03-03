@@ -3,7 +3,7 @@
 /**
  * Plugin Name: Responsive oEmbed
  * Description: Adds a wrapper element around oEmbed elements and applies some CSS to maintain the aspect ratio, which is calculated from the iframe, object or embed html tag width and height attributes. An aspect ratio will only be applied, if both width AND height attributes are given and if there is no data-secret attribut (because those are handled via wp-embed.js). Some oEmbeds have no width or height attributes set, because they calculate their dimension via Javascript. In those cases this plugin has no effect. Uses both 'embed_oembed_html' and 'oembed_result' filter hooks to manipulate automated and manual oEmbed calls.
- * Version:     1.4
+ * Version:     1.4.1
  * Author:      Palasthotel <rezeption@palasthotel.de> (Kim-Christian Meyer)
  * Author URI:  https://palasthotel.de
  * License:     GNU General Public License v3

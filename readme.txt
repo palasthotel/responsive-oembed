@@ -3,8 +3,8 @@ Contributors: palasthotel, greatestview
 Donate link: https://palasthotel.de/
 Tags: oembed, responsive, aspect ratio, iframe, youtube, vimeo, soundcloud
 Requires at least: 4.0
-Tested up to: 5.0
-Stable tag: 1.4
+Tested up to: 5.1
+Stable tag: 1.4.1
 License: GNU General Public License v3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -27,6 +27,9 @@ You can find a [list of all oEmbed sites supported by WordPress here](https://co
 3. You’re done! Try pasting a YouTube, Vimeo or any other oEmbed URL into a post. Open the post and resize your browser window, the oEmbed element should scale properly.
 
 == Changelog ==
+
+= 1.4.1 =
+* WordPress 5.1 compatibility check and readme.txt update.
 
 = 1.4 =
 * Exclude WordPress post embeds, because their size is handled via wp-embed.js.
